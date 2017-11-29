@@ -32,6 +32,9 @@ func Test (t *testing.T) {
 
   if true == exists {
     fmt.Println("文件已存在")
+    content, _ := Get("./test.txt")
+    
+    fmt.Println("文本内容: \n```\n", content, "\n```");
   } else {
     fmt.Println("文件不存在")
   }

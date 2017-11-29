@@ -16,7 +16,7 @@ const(
   APPEND = 1
 )
 
-func GetFile (file string) (string, error) {
+func Get (file string) (string, error) {
   fl, err := os.Open(file)
 
   if err != nil {
